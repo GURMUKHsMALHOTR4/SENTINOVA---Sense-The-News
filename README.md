@@ -78,4 +78,3 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 
 ### 6. Articles with Sentiments
 ![Articles with Sentiments](./photos/Screenshot-2025-09-21-4.46.34-PM.png)
-
