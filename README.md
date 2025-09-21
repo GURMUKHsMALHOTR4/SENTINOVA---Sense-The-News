@@ -47,3 +47,6 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 
 ## 📂 Project Architecture  
 
+🔧 **Backend – API & Database**  
+
+
