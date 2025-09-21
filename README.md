@@ -1,56 +1,37 @@
-<!-- Hero Banner -->
-<h1 align="center">✨📰 SENTINOVA — Sense The News ✨</h1>
-<h3 align="center">The Future of News • AI + NLP • Powered by Spring Boot</h3>
+<!-- 🌌 HERO SECTION -->
+<h1 align="center" style="font-size:80px">📰 SENTINOVA</h1>
+<h2 align="center" style="font-size:40px">⚡ Sense The News • AI-Powered • Enterprise Backend</h2>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-Enterprise%20Grade-orange?style=for-the-badge&logo=openjdk" />
-  <img src="https://img.shields.io/badge/SpringBoot-3.4.9-brightgreen?style=for-the-badge&logo=springboot&logoColor=white" />
-  <img src="https://img.shields.io/badge/NLP-Stanford%20CoreNLP%20%7C%20OpenNLP-red?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/PostgreSQL-DB-blue?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Frontend-Next.js%2014-black?style=for-the-badge&logo=nextdotjs" />
+<p align="center" style="font-size:20px">
+  <i>The future of news. Not another website — <b>a trillion-dollar intelligence platform</b>.</i>
 </p>
 
 ---
 
-## 🚀 Welcome to the Future of News
+## 🌍 The Mission
 
-**SENTINOVA** is not just another project.  
-It’s the **Apple Vision Pro of news platforms** — **luxury, intelligence, precision**.  
+The internet is drowning in **headlines and noise**.  
+SENTINOVA was built to **cut through chaos**, extract what matters,  
+and deliver **understanding, not just information**.  
 
-Built with a **backend so powerful it feels alive**, SENTINOVA scrapes, understands, and transforms the world’s information into **clarity**.  
-
----
-
-## ✨ Why SENTINOVA?
-
-🌍 Because the world is drowning in headlines.  
-🧠 Because raw data isn’t enough — we need **meaning**.  
-⚡ Because only **AI-powered NLP + Enterprise Backend** can truly make sense of the noise.  
-
-SENTINOVA is built like a **trillion-dollar product launch**:
-- ⚡ **Spring Boot REST APIs** — lightning fast, enterprise-ready  
-- 🧠 **Stanford CoreNLP + OpenNLP** — advanced AI sentiment & entity analysis  
-- 🗄️ **PostgreSQL** — bulletproof data handling  
-- 🔎 **JSoup Scraping** — extracting the web in milliseconds  
-- 🧪 **Spring Boot Test + Postman** — rock-solid validation  
+It’s **AI-powered**, **backend-first**, and **built like an empire**.  
 
 ---
 
-## 🏗️ Tech Empire
+<table>
+<tr>
+<td width="65%" valign="top">
 
-### 🏆 Backend — *The Core Engine*
-- **Spring Boot** `3.4.9` → REST APIs  
-- **NLP** → Stanford CoreNLP `4.5.5`, Apache OpenNLP `2.3.3`  
-- **Web Scraping** → JSoup `1.17.2`  
-- **Database** → PostgreSQL  
-- **Testing** → Spring Boot Starter Test + Postman  
+## 🚀 Features
 
-### 💎 Frontend — *The Luxury Interface*
-- **Next.js** `14` + **React**  
-- **TailwindCSS 4**, Radix UI, Framer Motion  
-- **Lucide Icons**, Recharts, Embla Carousel  
-- **Polished animations, premium UI libraries**  
+- 🔎 **Live Web Scraping** → JSoup-powered, real-time news fetching  
+- 🧠 **AI Sentiment Analysis** → Stanford CoreNLP + Apache OpenNLP  
+- ⚡ **Enterprise REST APIs** → Spring Boot 3.4.9  
+- 🗄️ **Data Backbone** → PostgreSQL  
+- 🧪 **Battle-Tested** → Spring Boot Test + Postman  
+- 🎨 **Next-Gen UI** → Next.js 14 + TailwindCSS 4 + Framer Motion  
+- 📊 **Interactive Visuals** → Recharts & premium UI libraries  
 
 ---
 
-## 📂 Architecture
+## 📂 Project Structure
