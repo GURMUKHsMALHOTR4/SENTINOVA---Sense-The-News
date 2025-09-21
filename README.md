@@ -52,29 +52,29 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 ## 🗄️ Database (PostgreSQL)
 
 ### 1. Connect & List Relations
-![DB Connect & Relations](./photos/Screenshot-2025-09-21-4.45.00-PM.png)
+<img width="700" alt="Connect & List Relations" src="https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" />
 
 ---
 
 ### 2. Tables in Schema
-![Tables](./photos/Screenshot-2025-09-21-4.45.12-PM.png)
+<img width="700" alt="Tables in Schema" src="https://github.com/user-attachments/assets/yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy" />
 
 ---
 
 ### 3. Table Schemas: Articles & Sentiments
-![Schemas](./photos/Screenshot-2025-09-21-4.45.33-PM.png)
+<img width="700" alt="Schemas: Articles & Sentiments" src="https://github.com/user-attachments/assets/zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz" />
 
 ---
 
 ### 4. Sample Articles Data
-![Articles Data](./photos/Screenshot-2025-09-21-4.45.57-PM.png)
+<img width="700" alt="Articles Data" src="https://github.com/user-attachments/assets/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa" />
 
 ---
 
 ### 5. Sample Sentiments Data
-![Sentiments Data](./photos/Screenshot-2025-09-21-4.46.14-PM.png)
+<img width="700" alt="Sentiments Data" src="https://github.com/user-attachments/assets/bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb" />
 
 ---
 
 ### 6. Articles with Sentiments
-![Articles with Sentiments](./photos/Screenshot-2025-09-21-4.46.34-PM.png)
+<img width="700" alt="Articles with Sentiments" src="https://github.com/user-attachments/assets/cccccccc-cccc-cccc-cccc-cccccccccccc" />
