@@ -54,17 +54,27 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 ### 1. Connect & List Relations
 <img width="700" alt="Connect & List Relations" src="./photos/db1.png" />
 
+---
+
 ### 2. Tables in Schema
 <img width="700" alt="Tables in Schema" src="./photos/db2.png" />
+
+---
 
 ### 3. Table Schemas: Articles & Sentiments
 <img width="700" alt="Table Schemas" src="./photos/db3.png" />
 
+---
+
 ### 4. Sample Articles Data
 <img width="700" alt="Sample Articles Data" src="./photos/db4.png" />
 
+---
+
 ### 5. Sample Sentiments Data
 <img width="700" alt="Sample Sentiments Data" src="./photos/db5.png" />
+
+---
 
 ### 6. Articles with Sentiments
 <img width="700" alt="Articles with Sentiments" src="./photos/db6.png" />
