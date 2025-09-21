@@ -51,8 +51,6 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 
 ## 🗄️ Database (PostgreSQL)
 
-## 🗄️ Database (PostgreSQL)
-
 ### 1. Connect & List Relations
 <img width="700" alt="Connect & List Relations" src="./photos/db1.png" />
 
