@@ -49,4 +49,33 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 
 🔧 **Backend – API & Database**  
 
+## 🗄️ Database (PostgreSQL)
+
+### 1. Connect & List Relations
+![DB Connect & Relations](./photos/Screenshot-2025-09-21-4.45.00-PM.png)
+
+---
+
+### 2. Tables in Schema
+![Tables](./photos/Screenshot-2025-09-21-4.45.12-PM.png)
+
+---
+
+### 3. Table Schemas: Articles & Sentiments
+![Schemas](./photos/Screenshot-2025-09-21-4.45.33-PM.png)
+
+---
+
+### 4. Sample Articles Data
+![Articles Data](./photos/Screenshot-2025-09-21-4.45.57-PM.png)
+
+---
+
+### 5. Sample Sentiments Data
+![Sentiments Data](./photos/Screenshot-2025-09-21-4.46.14-PM.png)
+
+---
+
+### 6. Articles with Sentiments
+![Articles with Sentiments](./photos/Screenshot-2025-09-21-4.46.34-PM.png)
 
