@@ -73,3 +73,19 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 
 ### 5. Sample Sentiments Data
 <img width="700" alt="Sample Sentiments Data" src="./photos/db6.png" />
+
+## 📬 API Testing (Postman)
+
+### 1. Fetch Articles Endpoint
+<img width="700" alt="Fetch Articles" src="./photos/p1.png" />
+
+---
+
+### 2. Add Article Endpoint
+<img width="700" alt="Add Article" src="./photos/p2.png" />
+
+---
+
+### 3. Sentiment Analysis Endpoint
+<img width="700" alt="Sentiment Analysis" src="./photos/p3.png" />
+
