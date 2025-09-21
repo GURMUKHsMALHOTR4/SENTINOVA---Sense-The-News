@@ -1,5 +1,6 @@
 package com.sentinova.backend.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import java.time.OffsetDateTime;
 import java.util.UUID;
@@ -9,36 +10,35 @@ import java.util.UUID;
 public class Sentiment {
 
     @Id
+    @GeneratedValue
     @Column(name = "id", columnDefinition = "uuid", updatable = false, nullable = false)
     private UUID id;
 
-    // Many sentiments can belong to one article
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "article_id", columnDefinition = "uuid", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "article_id", referencedColumnName = "id", columnDefinition = "uuid", nullable = false)
+    @JsonBackReference
     private Article article;
 
-    @Column(name = "sentiment_label")
-    private String sentimentLabel; // e.g., "POSITIVE", "NEGATIVE", "NEUTRAL"
+    @Column(name = "label", length = 64, nullable = false)
+    private String label; // e.g. "POSITIVE", "NEGATIVE", "NEUTRAL"
 
-    @Column(name = "sentiment_score")
-    private Double sentimentScore; // e.g., a confidence score between 0.0 - 1.0
+    @Column(name = "score", nullable = false)
+    private Double score;
 
-    @Column(name = "created_at")
+    @Column(name = "created_at", nullable = false, updatable = false)
     private OffsetDateTime createdAt;
 
     public Sentiment() {}
 
-    public Sentiment(Article article, String sentimentLabel, Double sentimentScore) {
+    public Sentiment(Article article, String label, Double score) {
         this.article = article;
-        this.sentimentLabel = sentimentLabel;
-        this.sentimentScore = sentimentScore;
+        this.label = label;
+        this.score = score;
     }
 
+    // === Lifecycle hook ===
     @PrePersist
     public void prePersist() {
-        if (this.id == null) {
-            this.id = UUID.randomUUID();
-        }
         if (this.createdAt == null) {
             this.createdAt = OffsetDateTime.now();
         }
@@ -61,20 +61,20 @@ public class Sentiment {
         this.article = article;
     }
 
-    public String getSentimentLabel() {
-        return sentimentLabel;
+    public String getLabel() {
+        return label;
     }
 
-    public void setSentimentLabel(String sentimentLabel) {
-        this.sentimentLabel = sentimentLabel;
+    public void setLabel(String label) {
+        this.label = label;
     }
 
-    public Double getSentimentScore() {
-        return sentimentScore;
+    public Double getScore() {
+        return score;
     }
 
-    public void setSentimentScore(Double sentimentScore) {
-        this.sentimentScore = sentimentScore;
+    public void setScore(Double score) {
+        this.score = score;
     }
 
     public OffsetDateTime getCreatedAt() {
@@ -83,5 +83,22 @@ public class Sentiment {
 
     public void setCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
+    }
+
+    // === Backward compatibility (for old code using SentimentLabel/SentimentScore) ===
+    public String getSentimentLabel() {
+        return this.label;
+    }
+
+    public void setSentimentLabel(String sentimentLabel) {
+        this.label = sentimentLabel;
+    }
+
+    public Double getSentimentScore() {
+        return this.score;
+    }
+
+    public void setSentimentScore(Double sentimentScore) {
+        this.score = sentimentScore;
     }
 }

@@ -1,34 +1,49 @@
 package com.sentinova.backend.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
+import org.hibernate.annotations.GenericGenerator;
+
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
+/**
+ * Article JPA entity. Keeps imageUrl as a nullable text column and instructs Jackson to
+ * exclude null fields from JSON serialization to keep API responses compact.
+ */
 @Entity
-@Table(name = "articles")
+@Table(name = "articles", uniqueConstraints = {
+        @UniqueConstraint(name = "uk_articles_url", columnNames = {"url"})
+})
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Article {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(generator = "UUID")
+    @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "id", columnDefinition = "uuid", updatable = false, nullable = false)
     private UUID id;
 
-    @Column(name = "title")
+    @Column(name = "title", columnDefinition = "text")
     private String title;
 
-    @Column(name = "url")
+    @Column(name = "url", columnDefinition = "text", unique = true)
     private String url;
 
-    @Column(name = "summary")
+    @Column(name = "summary", columnDefinition = "text")
     private String summary;
 
-    @Column(name = "content", columnDefinition = "TEXT")
+    @Column(name = "content", columnDefinition = "text")
     private String content;
 
-    @Column(name = "source")
+    @Column(name = "source", columnDefinition = "text")
     private String source;
 
-    @Column(name = "category")
+    @Column(name = "category", columnDefinition = "text")
     private String category;
 
     @Column(name = "published_at")
@@ -37,11 +52,21 @@ public class Article {
     @Column(name = "fetched_at")
     private OffsetDateTime fetchedAt;
 
+    /**
+     * New field to store article image URL. Nullable in DB.
+     * Column name = image_url so it matches existing DB migration/SQL we used previously.
+     */
+    @Column(name = "image_url", columnDefinition = "text", nullable = true)
+    private String imageUrl;
+
+    @OneToMany(mappedBy = "article", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonManagedReference
+    private List<Sentiment> sentiments = new ArrayList<>();
+
     public Article() {
-        // default ctor for JPA
+        // JPA
     }
 
-    // Convenience constructor
     public Article(UUID id, String title, String url) {
         this.id = id;
         this.title = title;
@@ -119,5 +144,37 @@ public class Article {
 
     public void setFetchedAt(OffsetDateTime fetchedAt) {
         this.fetchedAt = fetchedAt;
+    }
+
+    /**
+     * Expose imageUrl as "imageUrl" in JSON responses.
+     */
+    @JsonProperty("imageUrl")
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    @JsonProperty("imageUrl")
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public List<Sentiment> getSentiments() {
+        return sentiments;
+    }
+
+    public void setSentiments(List<Sentiment> sentiments) {
+        this.sentiments = sentiments;
+    }
+
+    // Helper method to add a sentiment safely
+    public void addSentiment(Sentiment sentiment) {
+        sentiments.add(sentiment);
+        sentiment.setArticle(this);
+    }
+
+    public void removeSentiment(Sentiment sentiment) {
+        sentiments.remove(sentiment);
+        sentiment.setArticle(null);
     }
 }
