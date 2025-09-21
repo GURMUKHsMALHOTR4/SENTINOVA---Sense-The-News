@@ -13,11 +13,11 @@
 ## ✨ About  
 
 **SENTINOVA** is not just a news app.  
-It’s the **trillion-dollar intelligence engine** for the modern world.  
+It’s an **AI-powered intelligence platform** redefining how we consume, analyze, and act on information.  
 
 🌍 The world is drowning in headlines.  
-🧠 SENTINOVA cuts through the chaos with **AI-powered NLP + Enterprise Backend**.  
-⚡ News finally makes sense.  
+🧠 SENTINOVA transforms raw data into **actionable insights**.  
+⚡ News that doesn’t just inform — it **empowers**.  
 
 ---
 
