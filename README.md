@@ -47,60 +47,46 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 
 ## 📂 Project Architecture  
 
-### 🌐 Live Product Preview  
+## 🌐 Live Product Preview
 
 **1. Homepage & Headline Sentiment Tags**  
-<img width="800" src="./photos/w1.png" />
+<img width="800" src="photos/w1.png" />
 
 **2. Search, Sentiment & Category Filters**  
-<img width="800" src="./photos/w2.png" />
+<img width="800" src="photos/w2.png" />
 
 **3. Positive News Feed (Green sentiment highlights)**  
-<img width="800" src="./photos/w3.png" />
+<img width="800" src="photos/w3.png" />
 
 **4. Category-based News Filtering (Dropdown example)**  
-<img width="800" src="./photos/w4.png" />
+<img width="800" src="photos/w4.png" />
 
 
-🔧 **Backend – API & Database**  
+## 🛢️ Database (PostgreSQL)
 
-## 🗄️ Database (PostgreSQL)
+**1. Connect & List Relations**  
+<img width="800" src="photos/db2.png" />
 
-### 1. Connect & List Relations
-<img width="700" alt="Connect & List Relations" src="./photos/db2.png" />
+**2. Tables in Schema**  
+<img width="800" src="photos/db3.png" />
 
----
+**3. Table Schemas (Users / Jobs / Applications)**  
+<img width="800" src="photos/db4.png" />
 
-### 2. Tables in Schema
-<img width="700" alt="Tables in Schema" src="./photos/db3.png" />
+**4. Applications Table Schema**  
+<img width="800" src="photos/db5.png" />
 
----
+**5. Jobs Table Schema**  
+<img width="800" src="photos/db6.png" />
 
-### 3. Table Schemas: Articles & Sentiments
-<img width="700" alt="Table Schemas" src="./photos/db4.png" />
-
----
-
-### 4. Sample Articles Data
-<img width="700" alt="Sample Articles Data" src="./photos/db5.png" />
-
----
-
-### 5. Sample Sentiments Data
-<img width="700" alt="Sample Sentiments Data" src="./photos/db6.png" />
 
 ## 📬 API Testing (Postman)
 
-### 1. Fetch Articles Endpoint
-<img width="700" alt="Fetch Articles" src="./photos/p1.png" />
+**1. Authentication & Login**  
+<img width="800" src="photos/p1.png" />
 
----
+**2. CRUD Job APIs**  
+<img width="800" src="photos/p2.png" />
 
-### 2. Add Article Endpoint
-<img width="700" alt="Add Article" src="./photos/p2.png" />
-
----
-
-### 3. Sentiment Analysis Endpoint
-<img width="700" alt="Sentiment Analysis" src="./photos/p3.png" />
-
+**3. Applications APIs**  
+<img width="800" src="photos/p3.png" />
