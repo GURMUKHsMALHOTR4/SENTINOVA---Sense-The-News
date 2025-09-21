@@ -51,30 +51,22 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 
 ## 🗄️ Database (PostgreSQL)
 
-### 1. Connect & List Relations
-<img width="700" alt="Connect & List Relations" src="https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" />
+## 🗄️ Database (PostgreSQL)
 
----
+### 1. Connect & List Relations
+<img width="700" alt="Connect & List Relations" src="./photos/db1.png" />
 
 ### 2. Tables in Schema
-<img width="700" alt="Tables in Schema" src="https://github.com/user-attachments/assets/yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy" />
-
----
+<img width="700" alt="Tables in Schema" src="./photos/db2.png" />
 
 ### 3. Table Schemas: Articles & Sentiments
-<img width="700" alt="Schemas: Articles & Sentiments" src="https://github.com/user-attachments/assets/zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz" />
-
----
+<img width="700" alt="Table Schemas" src="./photos/db3.png" />
 
 ### 4. Sample Articles Data
-<img width="700" alt="Articles Data" src="https://github.com/user-attachments/assets/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa" />
-
----
+<img width="700" alt="Sample Articles Data" src="./photos/db4.png" />
 
 ### 5. Sample Sentiments Data
-<img width="700" alt="Sentiments Data" src="https://github.com/user-attachments/assets/bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb" />
-
----
+<img width="700" alt="Sample Sentiments Data" src="./photos/db5.png" />
 
 ### 6. Articles with Sentiments
-<img width="700" alt="Articles with Sentiments" src="https://github.com/user-attachments/assets/cccccccc-cccc-cccc-cccc-cccccccccccc" />
+<img width="700" alt="Articles with Sentiments" src="./photos/db6.png" />
