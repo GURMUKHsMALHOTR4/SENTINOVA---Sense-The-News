@@ -47,6 +47,21 @@ It’s an **AI-powered intelligence platform** redefining how we consume, analyz
 
 ## 📂 Project Architecture  
 
+### 🌐 Live Product Preview  
+
+**1. Homepage & Headline Sentiment Tags**  
+<img width="800" src="./photos/w1.png" />
+
+**2. Search, Sentiment & Category Filters**  
+<img width="800" src="./photos/w2.png" />
+
+**3. Positive News Feed (Green sentiment highlights)**  
+<img width="800" src="./photos/w3.png" />
+
+**4. Category-based News Filtering (Dropdown example)**  
+<img width="800" src="./photos/w4.png" />
+
+
 🔧 **Backend – API & Database**  
 
 ## 🗄️ Database (PostgreSQL)
